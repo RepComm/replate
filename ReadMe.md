@@ -1,13 +1,9 @@
 # Jon-Template
-My own wordpress template
+My own open-source wordpress theme
 
-I'm writting this from scratch<br/>
-The idea is to learn the internals by using them,<br/>
-learn the parts that get stuck so I can problem solve quicker,<br/>
-and write an efficient/sleek theme for later use.<br/>
-<br/>
-The theme will end up being my go-to for when<br/>
-I charge for webmaster-ing, but the theme itself<br/>
-is of course open-source =)<br/>
+Powered by [RepComm/component-php](https://github.com/RepComm/component-php)
+
+Features:
+- TODO, lots of readme to write
 
 ![alt text](preview.png)
