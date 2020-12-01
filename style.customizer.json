@@ -1,0 +1,17 @@
+{
+  "Theme Colors": [
+    {
+      "name": "Header Color",
+      "id": "header_color",
+      "type": "color",
+      "default": "$474777"
+    },
+    
+    {
+      "name": "Header Font Color",
+      "id": "header_font_color",
+      "type": "color",
+      "default": "$474777"
+    }
+  ]
+}

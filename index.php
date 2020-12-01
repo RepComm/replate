@@ -13,6 +13,10 @@ function head_hook () {
   $styles->
   attr("type", "text/css")->
   textContent(
+    "body {" .
+      "background-color:" . get_theme_mod("body_bg_color", "#dddddd") . ";" .
+    "}" .
+
     "#header {" .
       "background-color:" . get_theme_mod("header_color", "#b7b7b7") . ";" .
       "color:" . get_theme_mod("header_font_color", "#000") . ";" .
@@ -61,7 +65,7 @@ add_action( 'wp_head', 'head_hook');
       textContent(get_bloginfo("description"))->
       mount($header);
 
-      if (is_user_logged_in()) {
+      if (!is_user_logged_in()) {
         $loginLink = new Component("a");
         $loginLink->
         attr("href", get_site_url() . "/wp-login.php")->
