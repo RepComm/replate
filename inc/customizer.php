@@ -76,11 +76,23 @@ function customizer_settings_hook ($wp_customize) {
   //Create a set of theme modifiers
   $themeMods = new ThemeModSection("jon-template-colors", "Theme Colors");
   //Create the header color setting
-  $themeMods->createMod("header_color", "color", "Header Color", "#b7b7b7");
+  $themeMods->createMod("bg_color", "color", "Background Area Color", "#b2b1dd");
   //Create the header font color setting
-  $themeMods->createMod("header_font_color", "color", "Header Font Color", "#000");
+  $themeMods->createMod("content_color", "color", "Content Area Color", "#717687");
 
-  $themeMods->createMod("body_bg_color", "color", "Body Background Color", "#000");
+  $themeMods->createMod("menu_color", "color", "Menu Color", "#000");
+
+  $themeMods->createMod("title_text_color", "color", "Title Text Color", "#1b2428");
+
+  $themeMods->createMod("generic_text_color", "color", "Generic Text Color", "#d9d9d9");
+
+  $themeMods->createMod("generic_text_hover_color", "color", "Generic Text Hover Color", "#bee6ea");
+
+  $themeMods->createMod("generic_button_color", "color", "Generic Button Color", "#6781a2");
+
+  $themeMods->createMod("generic_button_hover_color", "color", "Generic Button Hover Color", "#334760");
+
+  $themeMods->createMod("generic_button_text_color", "color", "Generic Button Text Color", "#ffffff");
 
   //Push to wordpress customizer
   $themeMods->build($wp_customize, "jon-template");
