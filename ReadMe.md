@@ -5,4 +5,4 @@ My own open-source wordpress theme
 - [ui.php](./inc/ui.php) - PHP Server Side Renderer / virtual DOM
 - [customizer.php](./inc/customizer.php) - Wrapper for wordpress customizer/mods that make adding them faster/easier
 
-![alt text](preview.png)
+![example.png](example.png)
