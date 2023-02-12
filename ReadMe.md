@@ -1,9 +1,8 @@
-# Jon-Template
+# replate
 My own open-source wordpress theme
 
-Powered by [RepComm/component-php](https://github.com/RepComm/component-php)
-
-Features:
-- TODO, lots of readme to write
+## Fancy Stuff
+- [ui.php](./inc/ui.php) - PHP Server Side Renderer / virtual DOM
+- [customizer.php](./inc/customizer.php) - Wrapper for wordpress customizer/mods that make adding them faster/easier
 
 ![alt text](preview.png)

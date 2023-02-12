@@ -72,9 +72,10 @@ class ThemeModSection {
   }
 }
 
+//implementation specific to the theme
 function customizer_settings_hook ($wp_customize) {
   //Create a set of theme modifiers
-  $themeMods = new ThemeModSection("jon-template-colors", "Theme Colors");
+  $themeMods = new ThemeModSection("replate-theme-colors", "Theme Colors");
   //Create the header color setting
   $themeMods->createMod("bg_color", "color", "Background Area Color", "#b2b1dd");
   //Create the header font color setting
@@ -95,7 +96,7 @@ function customizer_settings_hook ($wp_customize) {
   $themeMods->createMod("generic_button_text_color", "color", "Generic Button Text Color", "#ffffff");
 
   //Push to wordpress customizer
-  $themeMods->build($wp_customize, "jon-template");
+  $themeMods->build($wp_customize, "replate-theme");
 }
 add_action('customize_register', 'customizer_settings_hook');
 
